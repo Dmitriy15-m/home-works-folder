@@ -146,7 +146,7 @@ a:focus {
   outline: none;
 }
 
-/* styles for header*/
+/* ------------------------ styles for header----------------------------*/
 
 $dark: #1e293b;
 $white: #ffffff;
@@ -355,7 +355,7 @@ $breakpoint_xxs: 680px;
   }
 }
 
-/* styles for main*/
+/* ------------------------------- styles for main--------------------------*/
 
 $dark: #1e293b;
 $white: #ffffff;
@@ -405,16 +405,17 @@ $secondary-text: #64748b;
     height: 336px;
     border-radius: 4px;
     overflow: hidden;
-    
+
     :hover {
-       transition-duration: .5s;
-       transform: scale(1.1)
+      transition-duration: 0.5s;
+      transform: scale(1.1);
     }
 
     &__img {
       height: 240px;
       max-width: 100%;
       border-radius: 4px;
+      cursor: pointer;
     }
 
     &__info {

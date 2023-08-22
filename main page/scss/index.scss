@@ -371,7 +371,7 @@ $secondary-text: #64748b;
 
     &__container {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
     }
   }
@@ -386,11 +386,20 @@ $secondary-text: #64748b;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
+    &__img-wrap {
+      overflow: hidden;
+      cursor: pointer;
+    }
+
     &__img {
       height: 240px;
       max-width: 100%;
       border-radius: 10px 10px 0 0;
-      cursor: pointer;
+
+      &:hover {
+        transition-duration: 0.2s;
+        transform: scale(1.1);
+      }
     }
 
     &__info p {

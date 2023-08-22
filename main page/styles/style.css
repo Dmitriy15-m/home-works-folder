@@ -329,7 +329,7 @@ a:focus {
 }
 .main .list-items__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .main .item-card {
@@ -342,11 +342,18 @@ a:focus {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+.main .item-card__img-wrap {
+  overflow: hidden;
+  cursor: pointer;
+}
 .main .item-card__img {
   height: 240px;
   max-width: 100%;
   border-radius: 10px 10px 0 0;
-  cursor: pointer;
+}
+.main .item-card__img:hover {
+  transition-duration: 0.2s;
+  transform: scale(1.1);
 }
 .main .item-card__info p {
   margin-left: 10px;

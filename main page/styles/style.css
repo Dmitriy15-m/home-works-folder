@@ -250,6 +250,9 @@ a:focus {
   border-radius: 4px 0 0 4px;
   cursor: pointer;
 }
+.header-bottom__search-input:focus {
+  outline: none;
+}
 .header-bottom__search-btn {
   display: flex;
   align-items: center;

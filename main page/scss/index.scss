@@ -271,6 +271,10 @@ $breakpoint_s: 576px;
         border: 1px solid $light-forms-border;
         border-radius: 4px 0 0 4px;
         cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
       }
 
       &-btn {

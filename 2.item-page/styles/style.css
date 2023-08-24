@@ -266,13 +266,6 @@ header {
   cursor: pointer;
 }
 
-.container {
-  width: 1296px;
-}
-.container_margin {
-  margin: 0 auto;
-}
-
 @media (max-width: 1200px) {
   .header-bottom__form {
     width: 650px;
@@ -312,80 +305,7 @@ header {
 }
 /*---------------- styles for main ----------------------*/
 main {
-  margin: 5px;
-}
-
-.offer-container {
   display: flex;
-}
-.offer-container__title {
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 32px;
-}
-
-.list-items {
-  display: flex;
-  font-family: "Inter", sans-serif;
-}
-.list-items__container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.item-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 270px;
-  height: 360px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-.item-card__img-wrap {
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 10px 10px 0 0;
-}
-.item-card__img {
-  height: 240px;
-  max-width: 100%;
-  border-radius: 10px 10px 0 0;
-}
-.item-card__img:hover {
-  transition-duration: 0.2s;
-  transform: scale(1.1);
-}
-.item-card__info {
-  margin-left: 10px;
-}
-.item-card__title {
-  color: #3b82f6;
-  margin-top: 10px;
-}
-.item-card__price {
-  color: #1e293b;
-}
-.item-card__location {
-  margin-top: 10px;
-}
-.item-card__visit-time {
-  margin-bottom: 10px;
-}
-.item-card__title, .item-card__price {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
-}
-.item-card__location, .item-card__visit-time {
-  color: #64748b;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
 }
 
 .container {
@@ -393,22 +313,19 @@ main {
   margin: 0 auto;
 }
 
-.container_margin {
-  margin-top: 32px;
-  margin-bottom: 24px;
+.breadcrumbs {
+  display: flex;
+  justify-content: space-around;
+  width: 386px;
+  height: 284;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  list-style-type: disc;
 }
-
-@media (max-width: 930px) {
-  .list-items__container {
-    justify-content: space-around;
-  }
-}
-@media (max-width: 768px) {
-  .offer-container__title {
-    display: block;
-    text-align: center;
-    font-size: 20px;
-  }
+.breadcrumbs li:first-child {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */

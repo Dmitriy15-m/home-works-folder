@@ -356,11 +356,12 @@ header {
   max-width: 100%;
   width: 1296px;
   margin: 0 auto;
+  border: 1px solid red;
 }
-.row {
+.row-page {
   display: flex;
+  gap: 50px;
   margin: 40px 5px 5px 5px;
-  border: 1px solid;
 }
 .categories-block {
   display: flex;
@@ -400,10 +401,20 @@ header {
   }
 }
 
-.selected-category-block {
+.selected-category-block-page {
   display: flex;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
 
   &__row p {
     font-size: 16px;
@@ -414,18 +425,6 @@ header {
 
   &__row h4 {
     color: $dark;
-  }
-
-  &__row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    width: 100%;
-    margin-top: 24px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
-    border: 1px solid;
   }
 
   &__common {
@@ -443,18 +442,21 @@ header {
     line-height: 32px;
   }
 
-  &__passenger-cars {
-  }
+ &__one, &__two, &__three {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+ }
+}
 
-  &__bikes {
+@media (max-width: 1280px) {
+  .selected-category-block-page__row {
+    gap: 50px;
   }
+}
 
-  &__trucks {
-  }
-
-  &__water-transport {
-  }
-
-  &__spare-parts {
+@media (max-width: 1180px) {
+  .selected-category-block-page__row {
+    gap: 20px;
   }
 }

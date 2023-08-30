@@ -407,6 +407,9 @@ $secondary-text: #64748b;
   }
 
   &__choose-category {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     select {
       width: 305px;
       color: $secondary-text;
@@ -426,7 +429,6 @@ $secondary-text: #64748b;
     display: flex;
     justify-content: start;
     align-items: center;
-
     button {
       display: flex;
       justify-content: center;
@@ -438,7 +440,6 @@ $secondary-text: #64748b;
       color: $white;
       border-radius: 4px;
       border: none;
-
       svg {
         margin-right: 8px;
       }
@@ -465,7 +466,6 @@ $secondary-text: #64748b;
     font-weight: 400;
     line-height: 20px;
     color: $secondary-text;
-
     a {
       color: $primary;
     }
@@ -480,33 +480,41 @@ $secondary-text: #64748b;
     margin-bottom: 16px;
   }
 
-  &__choose-category p,
-  &__name-ads p,
-  &__desc p,
-  &__address p,
-  &__add-price p {
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+  &__choose-category,
+  &__name-ads,
+  &__desc,
+  &__address,
+  &__add-price {
+    p {
+      margin-bottom: 8px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
   }
 
-  &__choose-category select,
-  &__name-ads input,
-  &__address input,
-  &__add-price input,
+  &__choose-category,
+  &__name-ads,
+  &__address,
+  &__add-price,
   &__add-img {
-    height: 48px;
-    padding: 0px 12px;
-    border-radius: 4px;
-    border: 1px solid $light-forms-border;
+    select,
+    input {
+      height: 48px;
+      padding: 0px 12px;
+      border-radius: 4px;
+      border: 1px solid $light-forms-border;
+    }
   }
 
-  &__name-ads input,
-  &__desc textarea,
-  &__address input,
+  &__name-ads,
+  &__desc,
+  &__address,
   &__add-img {
-    width: 856px;
+    input,
+    textarea {
+      width: 856px;
+    }
   }
 
   &__choose-category,
@@ -525,20 +533,26 @@ $secondary-text: #64748b;
 }
 
 @media (max-width: 875px) {
-  .new-ads-page__name-ads input,
-  .new-ads-page__desc textarea,
-  .new-ads-page__address input,
+  .new-ads-page__name-ads,
+  .new-ads-page__desc,
+  .new-ads-page__address,
   .new-ads-page__add-img {
-    width: 700px;
+    input,
+    textarea {
+      width: 700px;
+    }
   }
 }
 
 @media (max-width: 768px) {
-  .new-ads-page__name-ads input,
-  .new-ads-page__desc textarea,
-  .new-ads-page__address input,
+  .new-ads-page__name-ads,
+  .new-ads-page__desc,
+  .new-ads-page__address,
   .new-ads-page__add-img {
-    width: 560px;
+    input,
+    textarea {
+      width: 560px;
+    }
   }
   .new-ads-page__add-img {
     gap: 8px;
@@ -564,11 +578,14 @@ $secondary-text: #64748b;
     align-items: center;
   }
 
-  .new-ads-page__name-ads input,
-  .new-ads-page__desc textarea,
-  .new-ads-page__address input,
+  .new-ads-page__name-ads,
+  .new-ads-page__desc,
+  .new-ads-page__address,
   .new-ads-page__add-img {
-    width: 350px;
+    input,
+    textarea {
+      width: 350px;
+    }
   }
 
   .new-ads-page__add-post-btn-link {

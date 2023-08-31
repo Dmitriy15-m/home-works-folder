@@ -201,7 +201,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     // display: none;
 
-    p {
+    li {
       margin: 0 8px;
       font-family: 'Inter', sans-serif;
       font-size: 14px;
@@ -214,13 +214,13 @@ header {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       }
     }
-    .dropdown__p1 {
+    .dropdown__li-one {
       margin-top: 8px;
     }
-    .dropdown__p2 {
+    .dropdown__li-two {
       margin-top: 16px;
     }
-    .dropdown__p3 {
+    .dropdown__li-three {
       margin-top: 16px;
       color: red;
     }

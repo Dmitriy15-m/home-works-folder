@@ -186,7 +186,7 @@ header {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.header-top .dropdown p {
+.header-top .dropdown li {
   margin: 0 8px;
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -195,16 +195,16 @@ header {
   border-radius: 4px;
   color: #1e293b;
 }
-.header-top .dropdown p:hover {
+.header-top .dropdown li:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.header-top .dropdown .dropdown__p1 {
+.header-top .dropdown .dropdown__li-one {
   margin-top: 8px;
 }
-.header-top .dropdown .dropdown__p2 {
+.header-top .dropdown .dropdown__li-two {
   margin-top: 16px;
 }
-.header-top .dropdown .dropdown__p3 {
+.header-top .dropdown .dropdown__li-three {
   margin-top: 16px;
   color: red;
 }

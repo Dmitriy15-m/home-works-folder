@@ -354,6 +354,13 @@ header {
 .personal-account-page__options {
   flex-wrap: wrap;
 }
+.personal-account-page__btn-block {
+  display: flex;
+  gap: 24px;
+  justify-content: start;
+  align-items: center;
+  margin-top: 24px;
+}
 .personal-account-page__change-pass {
   flex-direction: column;
 }
@@ -381,10 +388,10 @@ header {
 }
 .personal-account-page__change-btn {
   width: 186px;
+  margin-top: 24px;
 }
 .personal-account-page__save-btn, .personal-account-page__change-btn {
   height: 48px;
-  margin-top: 24px;
   background-color: #3b82f6;
   font-size: 16px;
   font-weight: 400;

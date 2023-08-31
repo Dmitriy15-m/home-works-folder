@@ -390,6 +390,7 @@ $white: #ffffff;
 $primary: #3b82f6;
 $light-forms-border: #cbd5e1;
 $secondary-text: #64748b;
+$success-text:#22C55E;
 
 .personal-account-page {
   margin-bottom: 124px;
@@ -405,6 +406,14 @@ $secondary-text: #64748b;
 
   &__options {
     flex-wrap: wrap;
+  }
+
+  &__btn-block {
+    display: flex;
+    gap: 24px;
+    justify-content: start;
+    align-items: center;
+    margin-top: 24px;
   }
 
   &__change-pass {
@@ -441,12 +450,12 @@ $secondary-text: #64748b;
 
   &__change-btn {
     width: 186px;
+    margin-top: 24px;
   }
 
   &__save-btn,
   &__change-btn {
     height: 48px;
-    margin-top: 24px;
     background-color: $primary;
     font-size: 16px;
     font-weight: 400;

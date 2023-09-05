@@ -61,11 +61,11 @@ $secondary-text: #64748b;
   &__pass {
     width: 368px;
     height: 48px;
+    padding: 0 12px;
     border: 1px solid $light-forms-border;
     border-radius: 4px;
     cursor: pointer;
     &::placeholder {
-      padding-left: 12px;
       font-size: 16px;
       font-weight: 400;
       line-height: 24px;

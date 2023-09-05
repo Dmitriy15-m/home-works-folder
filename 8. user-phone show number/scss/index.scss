@@ -161,10 +161,16 @@ $secondary-text: #64748b;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   &__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 24px;
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
+    svg {
+      cursor: pointer;
+    }
   }
 
   &__pone {

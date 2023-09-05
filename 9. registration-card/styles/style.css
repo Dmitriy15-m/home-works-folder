@@ -46,12 +46,12 @@
 .registration-block__phone, .registration-block__name, .registration-block__pass {
   width: 368px;
   height: 48px;
+  padding: 0 12px;
   border: 1px solid #cbd5e1;
   border-radius: 4px;
   cursor: pointer;
 }
 .registration-block__phone::placeholder, .registration-block__name::placeholder, .registration-block__pass::placeholder {
-  padding-left: 12px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;

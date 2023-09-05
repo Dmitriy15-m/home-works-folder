@@ -1,0 +1,63 @@
+.registration-block {
+  display: flex;
+  flex-direction: column;
+  width: 416px;
+  height: 352px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.registration-block__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 368px;
+  height: 48px;
+  margin: 24px;
+}
+.registration-block__row p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.registration-block__row svg {
+  cursor: pointer;
+}
+.registration-block__name {
+  margin: 16px 24px;
+}
+.registration-block__phone, .registration-block__pass {
+  margin: 0 24px;
+}
+.registration-block__btn {
+  width: 244px;
+  height: 48px;
+  margin: 24px auto;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.registration-block__phone, .registration-block__name, .registration-block__pass {
+  width: 368px;
+  height: 48px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.registration-block__phone::placeholder, .registration-block__name::placeholder, .registration-block__pass::placeholder {
+  padding-left: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.registration-block__phone:focus, .registration-block__name:focus, .registration-block__pass:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */
